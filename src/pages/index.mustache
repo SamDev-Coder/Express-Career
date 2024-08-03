@@ -91,11 +91,14 @@
   </div>
 
   <!-- JOBS -->
-<div class="container d-none d-sm-block d-lg-none block px-4 mt-5">
+<div class="container px-4 mt-5">
   <h2 class="text-center mb-4">Job Opportunities</h2>
 
-  {{#jobs}}
-  <div class="card my-3 d-block d-sm-none d-lg-none block">
+//JOBS LIST
+<div class="d-md-none">
+
+{{#jobs}}
+  <div class="card mb-3">
     <div class="card-body">
       <h5 class="card-title">#<a href="#/jobs/{{id}}">{{title}}</a></h5>
       <h6 class="card-subtitle mb-1 text-body-secondary">
@@ -108,13 +111,11 @@
   </div>
 
   {{/jobs}}
-</div>
 
+</div>
+  
     <!-- <!-TABLE JOBS-  --> 
   
-
-    
-
     <!-- APPLICATION FORM -->
     
 
