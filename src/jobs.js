@@ -22,6 +22,13 @@ const JOBS = [
         posted: 'Match 3, 2023'
     }, 
     
+    {
+        id: 3,
+        title: 'Full Development',
+        location: 'Benge, Lagos',
+        salary: '120000',
+        posted: 'Match 3, 2023'
+    }, 
 ]
 
 module.exports = JOBS;
