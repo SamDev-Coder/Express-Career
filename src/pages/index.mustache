@@ -91,13 +91,13 @@
   </div>
 
   <!-- JOBS -->
-<div class="container px-4 mt-5">
+<div class="container d-none d-sm-block d-lg-none block px-4 mt-5">
   <h2 class="text-center mb-4">Job Opportunities</h2>
 
   {{#jobs}}
-  <div class="card my-3">
+  <div class="card md-my-3">
     <div class="card-body">
-      <h5 class="card-title"><a href="/jobs/{{id}}">{{title}}</a></h5>
+      <h5 class="card-title"><a href="#/jobs/{{id}}">{{title}}</a></h5>
       <h6 class="card-subtitle mb-1 text-body-secondary">
         {{location}} {{salary}}
       </h6>
