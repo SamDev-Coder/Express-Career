@@ -94,13 +94,13 @@
 <div class="container px-4 mt-5">
   <h2 class="text-center mb-4">Job Opportunities</h2>
 
-//JOBS LIST
+<!-- JOB LIST -->
 <div class="d-md-none">
 
 {{#jobs}}
   <div class="card mb-3">
     <div class="card-body">
-      <h5 class="card-title">#<a href="#/jobs/{{id}}">{{title}}</a></h5>
+      <h5 class="card-title">#<a href="/jobs/{{id}}">{{title}}</a></h5>
       <h6 class="card-subtitle mb-1 text-body-secondary">
         {{location}} {{salary}}
       </h6>
@@ -112,9 +112,31 @@
 
   {{/jobs}}
 
+<!-- <!-TABLE JOBS-  --> 
+    <div class = "offset-lg-2 col-lg-8">
+      <table class = "d-none d-md-table table table-striped table-bordered">
+      <tr class = "table-primary text center">
+      <th>Job Title</th>
+      <th>Location</th>
+      <th>Salary</th>
+      <th>Posted</th>
+
+
+      {{#jobs}}
+      <tr>
+      <td><a href =/jobs/{{id}}"> {{title}}</a></td>
+        <td>{{location}}</td>
+        <td>{{salary}}</td>
+        <td>{{Posted}}</td>
+      </tr>
+
+      {{/jobs}}
+
+      </table>
+      </div>
+      </div>
 </div>
   
-    <!-- <!-TABLE JOBS-  --> 
   
     <!-- APPLICATION FORM -->
     
